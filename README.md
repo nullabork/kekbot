@@ -1,5 +1,7 @@
-`nvm use` or change to `node >= v14.15.1`
+-   `nvm use` or change to `node >= v14.15.1`
 
-`npm install`
+-   `npm install`
 
-`npm start`
+-   create a `.env` file form `.env.example` and fill in the Token and Emoji id
+
+-   `npm start`
