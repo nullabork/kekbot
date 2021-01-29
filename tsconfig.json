@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+      "rootDir": "./src",
+      "outDir": "./build",
+      "baseUrl": "./",
+      "sourceMap": false,
+      "strict": true,
+      "noImplicitReturns": true,
+      "noImplicitAny": false,
+      "target": "ES2017",
+      "module": "CommonJS",
+      "moduleResolution": "node",
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "forceConsistentCasingInFileNames": true,
+      "typeRoots": [
+        "node_modules/@types"
+      ],
+      "paths": {
+        "src/*": ["src/*"]
+      }
+  },
+  "files": [
+    "./src/index.ts",
+    "./src/mikro-orm.config.ts"
+  ],
+  "include": [
+    "src/commands/*", 
+    "src/entities/*"
+  ],
+  "exclude": [
+      "node_modules"
+  ]
+}

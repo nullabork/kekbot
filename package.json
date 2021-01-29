@@ -1,0 +1,51 @@
+{
+  "name": "memer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "startts": "npx ts-node ./src/index.ts",
+    "start": "npx tsc && node --trace-warnings ./build/index.js",
+    "build": "npx tsc",
+    "test": "npx tsc && node --trace-warnings ./test.js",
+    "lint": "eslint --ext .ts --color",
+    "format": "prettier --write 'src/**/*.{ts}'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.10",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "babel-eslint": "^10.1.0",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "@mikro-orm/sql-highlighter": "^1.0.1",
+    "@mikro-orm/sqlite": "^4.3.4",
+    "chalk": "^4.1.0",
+    "figlet": "^1.5.0",
+    "i": "^0.3.6",
+    "kind-of": "^6.0.3",
+    "mikro-orm": "^4.3.4",
+    "npm": "^6.14.9",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^9.1.1"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./build/mikro-orm.config.js"
+    ]
+  }
+}
