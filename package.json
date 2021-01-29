@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "startts": "npx ts-node ./src/index.ts",
-    "start": "npx tsc && node --trace-warnings ./build/index.js",
+    "build:start": "npx tsc && node --trace-warnings ./build/index.js",
+    "start": "npx ts-node ./src/index.ts",
     "build": "npx tsc",
     "test": "npx tsc && node --trace-warnings ./test.js",
     "lint": "eslint --ext .ts --color",
