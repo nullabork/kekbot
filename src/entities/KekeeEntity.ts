@@ -10,7 +10,15 @@ export class KekeeEntity extends BaseEntity {
     count: number = 0;
 
     @Property()
+    score: number = 0;
+
+    @Property()
+    keepscore: boolean = false;
+
+    @Property()
     track: boolean = false;
+
+
 
     constructor(member_id: string) {
         super();
